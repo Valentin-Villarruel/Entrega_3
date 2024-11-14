@@ -7,6 +7,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(255, 255, 255);
     color: #302727;
+    display: flex;
 }
 
 header {
@@ -36,7 +37,6 @@ nav ul li a {
 h1 {
     text-align: center;
 }
-
 
 .formulario {
     background-color: #d0eace;
@@ -68,6 +68,7 @@ form input {
 main {
     padding: 2rem;
     text-align: center;
+    flex: 1; 
 }
 
 main img {
@@ -105,11 +106,13 @@ button:hover {
     color: white;
 }
 
-footer {
-    width: 100%;
-    margin-bottom: auto;
-    background-color: #d0eace;
-    color: black;
+footer { 
+    background-color: #d0eace; 
+    color: black; 
+    padding: 1rem; 
+    width: 100%; 
+    box-sizing: border-box; 
+    position: relative; 
 }
 
 footer .social-logos {
@@ -135,3 +138,7 @@ footer a {
     color: #208fc2;
     text-decoration: none;
 }
+
+html, body { 
+    height: 100%; 
+    flex-direction: column; } 
